@@ -1,0 +1,18 @@
+﻿<Window x:Class="prjAccountant.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Расчет расходов за месяц" Height="550" Width="540" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" MouseLeftButtonDown="Window_MouseLeftButtonDown_1">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Height="460" Width="540">
+                <TextBox Name="sourceText" Margin="10,10,10,10" TextWrapping="Wrap" AcceptsReturn="True" MinWidth="250"></TextBox>
+                <TextBox Name="resultText" Margin="0,10,10,10" VerticalScrollBarVisibility="Visible" MinWidth="250"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Width="540">
+                <Button Name="calculateButton" Height="40" Width="80" HorizontalAlignment="Left" Margin="10,10,10,10" Content="Рассчитать" Click="calculateButton_Click"></Button>
+                <Button Name="saveResultBotton" Height="40" Width="80" HorizontalAlignment="Right" Margin="340,10,10,10" Content="Сохранить" Click="saveResultBotton_Click"></Button>
+            </StackPanel>
+
+        </StackPanel>           
+    </Grid>
+</Window>
